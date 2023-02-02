@@ -34,7 +34,7 @@ const Navbar = () => {
           <Link className ="link" to="/">E-STORE</Link>
         </div>
         <div className="right">
-          {/* <div className="item">
+          <div className="item">
             <Link className ="link" to="/">Homepage</Link>
           </div>
           <div className="item">
@@ -45,7 +45,7 @@ const Navbar = () => {
           </div>
           <div className="item">
             <Link className ="link" to="/">Stores</Link>
-          </div> */}
+          </div>
           <div className="icons">
             <SearchIcon/>
             <PersonOutlineOutlinedIcon/>
