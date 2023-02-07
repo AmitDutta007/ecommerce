@@ -4,6 +4,7 @@
   
     .left {
       flex: 1;
+      position: -webkit-sticky;
       position: sticky;
       height: 100%;
       top: 50px;

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-// import List from "../../components/List/List";
+import List from "../../components/List/List";
 // import useFetch from "../../hooks/useFetch";
 import "./Products.scss";
 
@@ -86,7 +86,7 @@ const Products = () => {
           src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600"
           alt=""
         />
-        {/* <List catId={catId} maxPrice={maxPrice} sort={sort} subCats={selectedSubCats}/> */}
+        <List catId={catId} maxPrice={maxPrice} sort={sort} subCats={selectedSubCats}/>
       </div>
     </div>
   );
