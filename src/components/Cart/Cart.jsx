@@ -1,4 +1,6 @@
 import React from 'react'
+import "./Cart.scss";
+import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
 
 const Cart = () => {
     const data = [
@@ -32,14 +34,31 @@ const Cart = () => {
                         <img src={item.img} alt />
                         <div className="details">
                             <h1>{item.title}</h1>
-                            {/* <p>{item.desc?.substring(0, 100)}</p>
+                            <p>{item.desc?.substring(0, 100)}</p>
                             <div className="price">
                                 {item.quantity} x ${item.price}
-                            </div> */}
+                            </div>
                         </div>
+                        <DeleteOutlinedIcon
+                            className="delete"
+                        // onClick={() => dispatch(removeItem(item.id))}
+                        />
                     </div>
                 ))
             }
+            <div className="total">
+                <span>SUBTOTAL</span>
+                {/* <span>${totalPrice()}</span> */}
+            </div>
+            <button
+                // onClick={handlePayment}
+            >PROCEED TO CHECKOUT</button>
+            <span className="reset"
+            //  onClick={() => dispatch(resetCart())}
+            >
+                Reset Cart
+            </span>
+
         </div>
     )
 }
